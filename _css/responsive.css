@@ -1,0 +1,404 @@
+/* Estilo p/ Tablets */
+@media only screen and (min-width: 768px) and (max-width: 959px) {  
+    /* Introdução */
+    
+    .introducao img {
+        width: 725px;
+        height: 279px;
+    }
+    
+    /* Cardapio */
+    
+    .cardapio {
+        height: 850px;
+    }
+    
+    .cardapio ul li {
+        font-size: 15pt;
+    }
+    
+    .cardapio .value {
+        left: 45px;
+    }
+    
+    .cardapio span {
+        left: -4px;
+    }
+    
+    
+    
+    .cardapio li .item:after {
+        width: 40px;
+        top: -14px;
+        left: 227px;
+    }
+    
+    .cardapio li .desc:before {
+        left: 20px;
+    }
+    
+    /* Qualidade */
+    
+    .qualidade ul li h3 {
+        font-size: 24pt;
+    }
+    
+    .qualidade ul li p {
+        font-size: 16pt;
+    }
+    
+    .qualidade ul li h3:after {
+        left: 95px;
+    }
+    
+    /* Quebra */
+    
+    .quebra p {
+        font-size: 25pt;
+    }
+    
+    .quebra p:after {
+        left: 350px;
+    }
+    
+    /* Rodapé */
+    
+    .rodape p {
+        font-size: 12pt;
+    }
+    
+    /* Referências */
+    
+    .references img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .references span, .references .font-tablet a {
+        font-size: 15pt;
+        top: -41px;
+        left: 70px;
+    }
+    
+    .references .container .redes_sociais a {
+        margin-bottom: 0px;
+    }
+    
+    .references .voltar {
+        top: 75px;
+    }
+}
+
+/* Estilo p/ Smartphone */
+@media only screen and (max-width: 767px) {
+    
+    /* Geral */
+    
+    .title {
+        font-size: 50pt;
+    }
+    
+    .title:before {
+        display: none;
+    }
+    
+    .title:after {
+        display: block;
+        width: 80px;
+        height: 4px;
+        top: -5px;
+        left: 110px;
+    }
+    
+    .subtitle {
+        font-family: 'Gabriola';
+        font-size: 35pt;
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    .subtitle:after {
+        content: "";
+        background-color: #fff;
+        position: relative;
+        display: block;
+        width: 60px;
+        height: 3px;
+        top: 0px;
+        left: 120px;
+    }
+    
+    /* Introdução */
+    
+    .menu {
+        position: fixed;
+        width: 300px;
+        height: 272px;
+        margin: 0 auto;
+        top: -220px;
+        z-index: 1;
+        transition: .3s;
+    }
+    
+    .menu_show {
+        top: 0px;
+    }
+    
+    .menu ul {
+        text-align: center;
+        border: none;
+        top: 10px;
+    }
+    
+    .menu ul li {
+        display: block;
+        margin: 0px;
+        padding: 10px 85px 10px 85px;
+        font-size: 17pt;
+        border: 3px;
+        border-color: #fff;
+        border-style: solid;
+    }
+    
+    .hamburger, .menu ul li:last-of-type {
+        cursor: pointer;
+        display: inline-block;
+        border: 0px;
+        padding: 0px;
+        background: none;
+    }
+    
+    .hamburger {
+        position: relative;
+        margin: 24px 5px;
+        cursor: pointer;
+        background: #fff;
+        width: 40px;
+        height: 3px;
+        transition: .1s;
+    }
+    
+    .hamburger:before, .hamburger:after {
+        content: "";
+        display: block;
+        position: relative;
+        background: #fff;
+        width: 40px;
+        height: 3px;
+        transition: .8s;
+    }
+    
+    .hamburger:before {
+        top: -15px;
+    }
+    
+    .hamburger:after {
+        top: 12px;
+    }
+    
+    .icon.active .hamburger {
+        background: rgba(255, 255, 255, 0);
+    }
+    
+    .icon.active .hamburger:before {
+        transform: rotate(45deg);
+        top: 1px;
+    }
+    
+    
+    .icon.active .hamburger:after {
+        transform: rotate(-45deg);
+        top: -2px;
+    }
+    
+    .menu ul li:hover:before {
+        display: none;
+    }
+    
+    .menu ul span {
+        display: block;
+        position: relative;
+    }
+    
+    .introducao img:first-of-type {
+        display: none;
+    }
+    
+    .introducao img:last-of-type {
+        display: block;
+        top: -40px;
+        margin: 0px auto 0px auto;
+    }
+    
+    .introducao h1 {
+        margin: 0px auto 10px auto;
+    }
+    
+    .introducao p {
+        font-size: 18pt;
+    }
+    
+    .introducao p:first-of-type {
+        margin-bottom: 20px;
+    }
+    
+    .introducao p span {
+        opacity: 0;
+    }
+    
+    /* Cardápio */
+    
+    .cardapio {
+        height: 2435px;
+    }
+    
+    .cardapio li p {
+        text-align: center;
+    }
+    
+    .cardapio .value {
+        left: 0px;
+    }
+    
+    .cardapio span {
+        font-size: 12px;
+        top: -8px;
+        left: -4px;
+    }
+    
+    .cardapio .desc {
+        font-size: 17pt;
+        text-align: center;
+        left: -0px;
+        margin: 0px;
+        padding-bottom: 5px;
+    }
+    
+    .cardapio li .item:after, .cardapio .desc:before {
+        width: 40px;
+        height: 2px;
+        left: 130px;
+    }
+    
+    .cardapio li .item:after {
+        top: 10px;
+    }
+    
+    .cardapio .desc:before {
+        top: -10px; /* ACRESCENTADO 2px PARA AJUSTE */
+    }
+    
+    /* Sobre */
+    
+    .history {
+        height: 1390px;
+    }
+    
+    .history .container .bg-trans {
+        padding: 10px 0;
+    }
+    
+    .aply4mobile {
+        position: relative;
+        left: 10px;
+        width: 280px;
+    }
+    
+    .contato img, .redes_sociais img {
+        position: relative;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .contato img:first-of-type {
+        margin-top: 30px;
+    }
+    
+    .contato img {
+        margin: 20px auto 10px auto;
+    }
+    
+    .contato img:nth-child(4) {
+        margin-top: 20px;
+    }
+    
+    .contato span {
+        top: 0px;
+        left: 0px;
+        text-align: center;
+    }
+    
+    .redes_sociais a {
+        position: relative;
+        left: 25px;
+    }
+    
+    /* Qualidade */
+    
+    .qualidade {
+        height: 940px;
+    }
+    
+    .qualidade img {
+        margin-top: 40px;
+    }
+    
+    .qualidade li {
+        margin-top: 50px;
+    }
+    
+    /* Quebra */
+    
+    .quebra {
+        height: 320px;
+    }
+    
+    .quebra blockquote {
+        top: 50px;
+    }
+    
+    .quebra p {
+        font-size: 22pt;
+    }
+    
+    .quebra p:after {
+        width: 50px;
+        height: 3px;
+        top: 180px;
+        left: 120px;
+    }
+    
+    .quebra cite {
+        font-size: 14pt;
+        top: 20px;
+    }
+    
+    /* Rodapé */
+    
+    .rodape p {
+        margin: 0;
+        font-size: 10pt;
+        top: 80px;
+    }
+    
+    .rodape a {
+        margin: 0;
+        font-size: 12pt;
+        top: -25px;
+        left: 0px;
+    }
+    
+    /* Referências */
+    
+    .references ul li a {
+        left: 0px;
+    }
+    
+    .references .voltar {
+        display: block;
+        left: 0;
+        text-align: center;
+        top: 0px;
+    }
+    
+}
